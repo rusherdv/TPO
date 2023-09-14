@@ -1,0 +1,12 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+.logo_mini{
+    width: 56px;
+    height: 75px;
+}
+.estadio{
+    width: 20%;
+    height: 20%;
+}
