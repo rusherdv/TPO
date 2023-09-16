@@ -1,0 +1,41 @@
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+.logo_mini{
+    width: 50px;
+    height: 70px;
+}
+
+.pagesRefContainer{
+    width: 20rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pageRef{
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+
+.pageRef::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.pageRef:hover::before {
+    width: 100%;
+}

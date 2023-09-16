@@ -31,4 +31,3 @@ async function getPlayersData(){
       console.log(err);
     });
 }
-

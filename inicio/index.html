@@ -5,53 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arsenal de Sarandí</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/responsive-design.css">
     <link rel="stylesheet" href="../shared-styles/navbar.css">
     <link rel="stylesheet" href="../shared-styles/footer.css">
 </head>
 <body>
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> <!-- Importo la fuente -->
+
     <!-- Zona de barra de navegacion -->
     <header>
         <nav>
             <img src="img/logo.png" class="logo_mini" alt="Mini escudo">
-            <div>
-                <a href="">Inicio</a>
-                <a href="">Estadisticas</a>
-                <a href="">Socio</a>
-                <a href="">Contacto</a>
+            <div class="pagesRefContainer">
+                <a href="" class="pageRef">Inicio</a>
+                <a href="" class="pageRef">Estadisticas</a>
+                <a href="" class="pageRef">Socio</a>
+                <a href="" class="pageRef">Contacto</a>
             </div>
         </nav>
     </header>
     
     <!-- Zona de Banner con lema y escudo -->
-    <section>
-        <img src="" alt="Cancha">
-        <div>
-            <h1>Lema</h1>
+    <section class="bannerSection">
+        <img src="./img/banner.png" class="banner" alt="Banner">
+        <div class="bannerText">
+            <h1 class="lemaText">Los del viaducto</h1>
             <img src="img/logo.png" class="logo" alt="Escudo">
         </div>
     </section>
 
     <!-- Zona de Plantilla con las cards de cada jugador -->
-    <section>
-        <h3>Plantilla</h3>
-        <div>
+    <section class="squadSection">
+        <h3 class="squadTitle">Plantilla</h3>
+        <div class="playerCardDiv">
             <!-- Ejemplo de card de jugador -->
-            <div>
-                <div>
-                    <h4>10</h4>
-                    <img src="" alt="Imagen de jugador">
+            <div class="playerCard">
+                <div class="playerTop">
+                    <h4 class="playerNumberBack">10</h4>
+                    <img class="playerImage" src="./img/player.png" alt="Imagen de jugador">
                 </div>
-                <div>
-                    <p>Nombre del jugador</p>
-                    <div>
-                        <p>Edad</p>
-                        <div>
-                            <img src="" alt="Imagen del pais">
-                            <p>Pais</p>
+                <div class="playerBottom">
+                    <p class="playerName">Lionel Andrés Messi</p>
+                    <p class="playerAge">Edad: <span>36</span></p>
+                    <p class="playerPosition">Posicion: <span>RW</span></p>
+                    <div class="playerCountry">
+                        Nacionalidad:
+                        <div class="countryDiv">
+                            <img class="miniCountry" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Imagen del pais">
+                            <p>Argentina</p>
                         </div>
                     </div>
-                    <p>Posicion</p>
+                </div>
+            </div>
+            <div class="playerCard">
+                <div class="playerTop">
+                    <h4 class="playerNumberBack">10</h4>
+                    <img class="playerImage" src="./img/player.png" alt="Imagen de jugador">
+                </div>
+                <div class="playerBottom">
+                    <p class="playerName">Lionel Andrés Messi</p>
+                    <p class="playerAge">Edad: <span>36</span></p>
+                    <p class="playerPosition">Posicion: <span>RW</span></p>
+                    <div class="playerCountry">
+                        Nacionalidad:
+                        <div class="countryDiv">
+                            <img class="miniCountry" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Imagen del pais">
+                            <p>Argentina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playerCard">
+                <div class="playerTop">
+                    <h4 class="playerNumberBack">10</h4>
+                    <img class="playerImage" src="./img/player.png" alt="Imagen de jugador">
+                </div>
+                <div class="playerBottom">
+                    <p class="playerName">Lionel Andrés Messi</p>
+                    <p class="playerAge">Edad: <span>36</span></p>
+                    <p class="playerPosition">Posicion: <span>RW</span></p>
+                    <div class="playerCountry">
+                        Nacionalidad:
+                        <div class="countryDiv">
+                            <img class="miniCountry" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Imagen del pais">
+                            <p>Argentina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playerCard">
+                <div class="playerTop">
+                    <h4 class="playerNumberBack">10</h4>
+                    <img class="playerImage" src="./img/player.png" alt="Imagen de jugador">
+                </div>
+                <div class="playerBottom">
+                    <p class="playerName">Lionel Andrés Messi</p>
+                    <p class="playerAge">Edad: <span>36</span></p>
+                    <p class="playerPosition">Posicion: <span>RW</span></p>
+                    <div class="playerCountry">
+                        Nacionalidad:
+                        <div class="countryDiv">
+                            <img class="miniCountry" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Imagen del pais">
+                            <p>Argentina</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="playerCard">
+                <div class="playerTop">
+                    <h4 class="playerNumberBack">10</h4>
+                    <img class="playerImage" src="./img/player.png" alt="Imagen de jugador">
+                </div>
+                <div class="playerBottom">
+                    <p class="playerName">Lionel Andrés Messi</p>
+                    <p class="playerAge">Edad: <span>36</span></p>
+                    <p class="playerPosition">Posicion: <span>RW</span></p>
+                    <div class="playerCountry">
+                        Nacionalidad:
+                        <div class="countryDiv">
+                            <img class="miniCountry" src="https://www.worldometers.info/img/flags/ar-flag.gif" alt="Imagen del pais">
+                            <p>Argentina</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
