@@ -51,6 +51,7 @@ a{
 }
 
 .squadTitle{
+    text-align: center;
     font-size: 35px;
 }
 
@@ -131,8 +132,35 @@ a{
 }
 
 /* Estadio section */
-
-.estadio{
-    width: 20%;
-    height: 20%;
+.stadiumSection{
+    width: 90%;
+    margin: auto;
 }
+
+.stadiumTitle{
+    text-align: center;
+    font-size: 35px;
+}
+
+.stadiumDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    min-width: 300px;
+}
+
+.stadium{
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    width: 600px;
+    height: 450px;
+
+    min-width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;   
+
+    margin-bottom: 100px;
+}
+
