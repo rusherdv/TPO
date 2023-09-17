@@ -143,6 +143,7 @@ a{
 }
 
 .stadiumDiv{
+    flex-basis: 50%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -164,3 +165,61 @@ a{
     margin-bottom: 100px;
 }
 
+.stadiumImage{
+    max-width: 100%;
+    height: auto;
+}
+
+
+.trophyDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.trophy{
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    height: auto;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.trophyImage{
+    position: absolute;
+    width: 500px;
+    top: 0px;
+
+    max-width: 100%;
+    height: auto;
+}
+
+.trophyBottom{
+    width: 90%;
+    margin: auto;
+    height: 100px;
+}
+
+.trophyName{
+    font-weight: 600;
+    font-size: 27px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+.trophyAge{
+    margin: 0px;
+    text-align: center;
+}
+
+.trophyTop{
+    position: relative;
+    height: 280px;
+    display: flex;
+    justify-content: flex-start;   
+}
+.trophyTittle{
+    text-align: center;
+    font-size: 35px;
+}
