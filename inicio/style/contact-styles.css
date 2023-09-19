@@ -43,12 +43,15 @@ button[type="submit"] {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-
-    margin-bottom: 50px;
 }
 
 button[type="submit"]:hover {
     background-color: rgb(112, 112, 112);
 }
 
+.failText{
+    color: red;
+    font-size: 20px;
 
+    margin-bottom: 50px;
+}
