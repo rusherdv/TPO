@@ -1,0 +1,93 @@
+/* Zona */
+footer {
+    background-color: #108ddb; 
+    color: hsla(0, 70%, 4%, 0.794); 
+    padding: 20px 0;
+  }
+  
+  /* Container */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1500px; /* Ancho max del contenedor */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    padding: 0 20px;
+  }
+  
+  /* logotipo y los iconos */
+  .logo-section {
+    display:flow-root;
+    align-items:self-start;
+    margin-bottom: 5px; /* espacio entre la sección del logotipo y la navegación */
+  }
+  
+  .minilogo2x {
+    width: 90px; 
+    height: auto;
+  }
+  /*  icono de face */
+.social-icon.fb {
+    color: hsl(232, 100%, 52%); 
+  }
+  
+  /*  icono de inst*/
+  .social-icon.in {
+    color: #a418a6; 
+  }
+  
+  /*  icono de X */
+  .social-icon.tw {
+    color: #07c8e6; 
+  }
+  
+  /*  linke */
+  .social-icon.li {
+    color: rgba(3, 63, 244, 0.995); 
+  }
+  
+  .social-icons {
+    margin-left: -5px; /* Espacio entre el logo y los íconos */
+    font-size: 25px; /* Tamaño de los íconos*/
+    margin-right: 100px; /* Espacio entre los íconos */
+  }
+  
+  /*  nav */
+  .navigation-section {
+    display: flex;
+    justify-content: space-between;
+    flex: 55; /* Distribuye el espacio disponible entre las columnas */
+  }
+  
+  .footer-column {
+    flex: 1; /* Distribuye el espacio  */
+    margin-right: 20px; /* Espacio entre las columnas */
+  }
+  
+  .footer-column h3 {
+    font-size: 15px; /* Tamaño de los títulos */
+  }
+  
+  .footer-column a {
+    text-decoration: none; /* Quitar subrayado de enlaces */
+    color: #c3cafb;
+    display: block; /* que los enlaces ocupen todo el ancho disponible */
+    margin-bottom: 10px; /* espacio entre los enlaces */
+  }
+  .footer-column a:hover {
+    text-decoration: underline; /*subrayado al pasar el mouse por encima */
+  }
+  
+  /* devs */
+  .developers-section {
+    text-align: center;
+    margin-top: 20px; /* espacio entre la navegación y los websmast */
+  }
+  
+  /* devs */
+  .developers-section p {
+    font-size: 18px; 
+    font-family:'Courier New', Courier, monospace;
+  }
+  
