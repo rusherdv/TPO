@@ -1,7 +1,7 @@
 const playerCardDiv = document.querySelector('.playerCardDiv')
 
 async function getTeamData(){
-    await fetch("https://v3.football.api-sports.io/teams?id=459", {
+    await fetch("https://v3.football.api-sports.io/standings?league=128&season=2023", {
       "method": "GET",
       "headers": {
         "x-rapidapi-host": "v3.football.api-sports.io",
@@ -10,7 +10,7 @@ async function getTeamData(){
     })
     .then(response => response.json())
     .then((data) => {
-      console.log(data)
+      console.log(data.response[0].league.standings[0])
     })
     .catch(err => {
       console.log(err);
@@ -50,15 +50,3 @@ async function getPlayersData(){
     });
 }
 
-async function getNews(){
-  await fetch("https://newsapi.org/v2/everything?q=afa&apiKey=12c7fdb8e00a4a55a9e81b85d44df9ae", {
-    "method": "GET"
-  })
-  .then(response => response.json())
-  .then((data) => {
-    console.log(data)
-  })
-  .catch(err => {
-    console.log(err);
-  });
-}
