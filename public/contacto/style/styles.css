@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap');
+@import "styles.css"; /* importo el otro css para no repetir código, guarda que lo que cambien en el otro se va a actualizar acá también*/
+
+/* sección del formulario */
+.formSection {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.formSection h1 {
+    font-size: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(153, 153, 153);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(112, 112, 112);
+}
+
+.failText{
+    color: red;
+    font-size: 20px;
+
+    margin-bottom: 50px;
+}
