@@ -5,7 +5,7 @@ var pass = document.getElementById('password');
 
 var fail = document.getElementById('fail');
 var errorsAmount;
-function sendForm(){
+/*function sendForm(){
   errorsAmount = 0;
   var errorMessages = [];
 
@@ -29,4 +29,4 @@ function sendForm(){
   }
 
   return false;
-}
+}*/
