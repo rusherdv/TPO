@@ -21,6 +21,11 @@
     width: 100%;
 }
 
+select{
+    width: 100%;
+}
+
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
