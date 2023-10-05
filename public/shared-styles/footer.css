@@ -57,6 +57,7 @@ footer {
 .navigation-section {
   display: flex;
   flex-wrap: wrap;
+  flex: 55;
   justify-content: space-between;
 }
 
