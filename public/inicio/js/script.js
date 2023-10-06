@@ -63,3 +63,16 @@ async function getPlayersData() {
     });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const slider = document.querySelector(".slider");
+  const slideTrack = document.querySelector(".slide-track");
+
+  // Clonar los primeros slides y agregarlos al final del slider
+  const slides = document.querySelectorAll(".slide");
+  slides.forEach(slide => {
+      const clone = slide.cloneNode(true);
+      slideTrack.appendChild(clone);
+  });
+});
+
+
