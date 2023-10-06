@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;600;900&display=swap');
+@import "styles.css";
+
+.statsSection{
+    margin: auto;
+    width: 80%;
+}
+
+.statsTittle{
+    display: flex;
+    justify-content: center;
+}
+
+.statsContainer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.statsDiv{
+    border: 1px solid gray;
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 2px;
+}
+
+.textDiv{
+    height: 10px;
+    font-size: 12px;
+}
+
+
+.lastMatchesDiv{
+    border: 1px solid gray;
+    margin: auto;
+    width: 450px;
+    height: 250px;
+    border-radius: 2px;
+    overflow: scroll;
+}
+
+.logoStats{
+    width: 100px;
+
+}
+
+
+
+
+
+
+.tablaTittle{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+th{
+    font-weight: 400;
+
+}
+
+tr {
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+thead{
+    font-size: 15px;
+}
+
+tbody{
+    font-size: 13px;
+}
+
+.team{
+    display: flex;
+    align-items: center;
+}
+
+.position{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.teamIcon{
+    border-left: 1px solid gray;
+    padding-left: 5px;
+}
