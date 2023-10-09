@@ -20,7 +20,7 @@
 .statsSubDiv{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
 }
 
@@ -46,25 +46,10 @@
     font-size: 12px;
 }
 
-
-.lastMatchesDiv{
-    border: 1px solid gray;
-    margin: auto;
-    width: 450px;
-    height: 250px;
-    border-radius: 2px;
-    overflow: scroll;
-}
-
 .logoStats{
     width: 100px;
 
 }
-
-
-
-
-
 
 .tablaTittle{
     display: flex;

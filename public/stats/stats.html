@@ -44,7 +44,8 @@
     </div>
   </section>
 
-  <button onclick="getTeamData()" style="background-color: red;color:white;font-weight: bold;">Obtener datos</button>
+  <button onclick="getTableData()" style="background-color: red;color:white;font-weight: bold;">Obtener datos</button>
+  <button onclick="getTeamData()" style="background-color: red;color:white;font-weight: bold;">Obtener equipo</button>
 
   <!-- Zona de Estadisticas -->
   <section class="statsSection">
@@ -55,40 +56,15 @@
         <div class="statsSubDiv">
           <h2 class="statsTeam">Arsenal de Sarandí</h3>
           
-          <div style="display: flex; justify-content: space-around;">
-            <div class="rateDiv">
-              <p class="rateText">Victorias</p>
-              <h3 class="rate">%10</h5>
-            </div>
-            <div class="rateDiv">
-              <p class="rateText">Empates</p>
-              <h3 class="rate">%10</h5>
-            </div>
-            <div class="rateDiv">
-              <p class="rateText">Derrotas</p>
-              <h3 class="rate">%10</h5>
-            </div>
+          <div id="percents">
+
           </div>
 
-          <div style="display: flex;">
-            <div>
-              <p class="textDiv">Partidos: <span>10</span></p>
-              <p class="textDiv">Ganados: <span>1</span></p>
-              <p class="textDiv">Empatados: <span>1</span></p>
-              <p class="textDiv">Perdidos: <span>1</span></p>
-            </div>
-            <div>
-              <p class="textDiv">Goles metidos: <span>1</span></p>
-              <p class="textDiv">Goles recibidos: <span>1</span></p>
-              <p class="textDiv">Diferencia de goles: <span>1</span></p>
-              <p class="textDiv">Puntos: <span>1</span></p>
-            </div>
+          <div style="display: flex;justify-content: space-between;" id="stats">
           </div>
         </div>
       </div>
-  
-      <div class="lastMatchesDiv">
-      </div>
+
     </div>
   </section>
 
