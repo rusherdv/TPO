@@ -3,8 +3,8 @@
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    height: 90px;
+    align-items: flex-start;
+    height: 50px;
     position: fixed;
     z-index: 1;
     background-color: rgba(220,20,60,0.5);
@@ -14,9 +14,10 @@ nav{
 }
 
 .logo_mini{
-    width: 50px;
-    height: 70px;
+    width: 100px;
+    height: 140px;
     margin-left: 5%;
+    margin-top: 5px;
 }
 
 .pagesRefContainer{
@@ -25,7 +26,7 @@ nav{
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    align-items: center;
+    margin-top: 15px;
     margin-right: 5%;
 }
 
