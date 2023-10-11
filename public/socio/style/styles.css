@@ -3,12 +3,13 @@
 
 /* sección del formulario */
 .formSection {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../../inicio/img/arsenal_cancha_socios.webp);
+    background-size: 100% 100%;
 }
 
 .formSection h1 {
