@@ -1,4 +1,12 @@
-const tbody = document.querySelector('tbody')
+const tbody = document.querySelector('tbody');
+const btnData = document.getElementById('btnTData');
+
+window.onload = () => {
+  btnData.addEventListener("click", () => {
+    getTableData();
+    btnData.setAttribute("disabled");
+  });
+};
 
 async function getTableData() {
   await fetch("https://v3.football.api-sports.io/standings?league=128&season=2023", {
