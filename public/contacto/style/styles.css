@@ -95,3 +95,8 @@ button[type="button"]:hover {
     justify-content: center;
     align-items: center;
 }
+
+a{
+    display: flex;
+    align-items: center;
+}
