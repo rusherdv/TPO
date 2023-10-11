@@ -4,7 +4,7 @@ const btnPlayers = document.getElementById('jugadores');
 window.onload = () => {
   btnPlayers.addEventListener("click", () => {
     getPlayersData();
-    btnPlayers.setAttribute("disabled");
+    btnPlayers.setAttribute("disabled","true");
   });
 };
 

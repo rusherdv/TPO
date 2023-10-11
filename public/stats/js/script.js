@@ -4,7 +4,7 @@ const btnData = document.getElementById('btnTData');
 window.onload = () => {
   btnData.addEventListener("click", () => {
     getTableData();
-    btnData.setAttribute("disabled");
+    btnData.setAttribute("disabled","true");
   });
 };
 
