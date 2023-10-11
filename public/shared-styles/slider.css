@@ -7,15 +7,16 @@
 
 .slider .slide-track {
     display: flex;
-    width: calc(200px * 28); /* Duplica el número de slides */
+    width: calc(200px * 7); /* Duplica el número de slides */
     animation: scroll 40s linear infinite;
     align-items: center;
 }
 
 .slider .slide {
     width: 200px;
-    filter: grayscale(1);
-    opacity: 0.2;
+    filter:grayscale(1);
+    opacity: 0.6;
+    
 }
 
 .slider .slide img {
