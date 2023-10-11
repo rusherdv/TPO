@@ -2,26 +2,37 @@
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 90px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(220,20,60,0.5);
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .logo_mini{
     width: 50px;
     height: 70px;
+    margin-left: 5%;
 }
 
 .pagesRefContainer{
     width: 25rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+    margin-right: 5%;
 }
 
 .pageRef{
     color: black;
     position: relative;
+    font-weight: bold;
     text-decoration: none;
 }
 
