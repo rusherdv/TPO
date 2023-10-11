@@ -20,6 +20,13 @@ nav{
     margin-top: 5px;
 }
 
+.copas_mini{
+    width: 200px;
+    height: 100px;
+    margin-right: 3%;
+    margin-top: 5px;
+}
+
 .pagesRefContainer{
     width: 25rem;
     display: flex;
