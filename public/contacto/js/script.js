@@ -1,32 +1,55 @@
 // Script para validar el formulario de la página de contacto
-var name_ = document.getElementById('fullName'); // con _ porque generaba conflicto
+var nombre = document.getElementById('fullName');
 var email = document.getElementById('email');
-var pass = document.getElementById('password');
-
+var tel = document.getElementById('telefono');
+var msj = document.getElementById('mensaje');
 var fail = document.getElementById('fail');
+var success = document.getElementById('success');
+
+//expresion regular para nombres y mail
+var regexNom = /^([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+)(\s+([A-Za-zÑñÁáÉéÍíÓóÚú]+['\-]{0,1}[A-Za-zÑñÁáÉéÍíÓóÚú]+))*$/;
+var regexEmail = /^\S+@\S+\.\S+$/;
+
 var errorsAmount;
-/*function sendForm(){
+function sendForm() {
   errorsAmount = 0;
   var errorMessages = [];
 
-  if (name_.value === null || name_.value === ""){
-    errorMessages.push("Debes ingresar tu nombre");
+  if (nombre.value === null || nombre.value.trim() === "") {
+    errorMessages.push("Es necesario ingresar un nombre.");
     errorsAmount++;
-  }
-  if (pass.value === null || pass.value === ""){
-    errorMessages.push("Debes ingresar una contraseña");
-    errorsAmount++;
-  }
-  if (email.value === null || email.value === ""){
-    errorMessages.push("Debes ingresar una dirección de correo.");
+  } else if (!regexNom.test(nombre.value)) {
+    errorMessages.push("Debe ingresar caracteres válidos para su nombre.");
     errorsAmount++;
   }
 
-  fail.innerHTML = errorMessages.join(", ");
+  if (email.value === null || email.value.trim() === "") {
+    errorMessages.push("Es necesario ingresar una dirección de correo.");
+    errorsAmount++;
+  } else if (!regexEmail.test(email.value)) {
+    errorMessages.push("Debe ingresar un formato válido de email.");
+    errorsAmount++;
+  }
+
+  if (tel.value === null || tel.value.trim() === "") {
+    errorMessages.push("Es necesario ingresar un número de teléfono.");
+    errorsAmount++;
+  }else if (Number.isInteger(tel.value) || toString(tel.value).length > 10 || /^[0-9]/.test(toString(tel.value))) {
+    errorMessages.push("Debe ingresar un formato válido de teléfono.");
+    errorsAmount++;
+  }
+
+  if (msj.value === null || msj.value.trim() === "") {
+    errorMessages.push("Es necesario ingresar un mensaje.");
+    errorsAmount++;
+  }else if (msj.value.length > 300) {
+    errorMessages.push("Reduzca la cantidad de caracteres a 300, sea más conciso con su mensaje.");
+    errorsAmount++;
+  }
+
+  fail.innerHTML = errorMessages.join(" ");
 
   if (errorsAmount === 0) {
-    alert("Enviado con éxito!");
+    success.textContent="Enviado con éxito!";
   }
-
-  return false;
-}*/
+}
