@@ -241,3 +241,15 @@ a{
     flex-wrap: wrap;
     margin-bottom: 50px;
 }
+
+@media (max-width: 850px) {
+    .stadiumText{
+        position: absolute;
+        color: white;
+        font-size: medium;
+        font-weight: 900;
+        width: 90%;
+        bottom: 10%;
+        margin-right: 5%;
+    }
+}
