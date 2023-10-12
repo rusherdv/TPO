@@ -32,8 +32,11 @@ nav {
 }
 
 .logo_mini {
-    width: 100px;
-    height: 140px;
+    max-width: 200px;
+    max-height: 2800px;
+    min-width: 50px;
+    min-height: 70px;
+    width: 10%;
     margin-left: 5%;
     margin-top: 5px;
 
@@ -41,8 +44,11 @@ nav {
 }
 
 .copas_mini {
-    width: 200px;
-    height: 100px;
+    width: 20%;
+    min-width: 100px;
+    min-height: 50px;
+    max-width: 400px;
+    max-height: 200px;
     margin-right: 3%;
     margin-top: 5px;
 
