@@ -1,33 +1,55 @@
-/* Navbar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-nav{
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.main-content {
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+}
+
+/* Estilos para la barra de navegación */
+nav {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     height: 50px;
     position: fixed;
     z-index: 1;
-    background-color: rgba(220,20,60,0.5);
+    background-color: rgb(180, 33, 63);
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.logo_mini{
+.logo_mini {
     width: 100px;
     height: 140px;
     margin-left: 5%;
     margin-top: 5px;
+
+    z-index: 2; /*para que quede arriba del menú de columnas*/
 }
 
-.copas_mini{
+.copas_mini {
     width: 200px;
     height: 100px;
     margin-right: 3%;
     margin-top: 5px;
+
+    z-index: 2;
 }
 
-.pagesRefContainer{
+.pagesRefContainer {
     width: 25rem;
     display: flex;
     justify-content: space-between;
@@ -37,7 +59,7 @@ nav{
     margin-right: 5%;
 }
 
-.pageRef{
+.pageRef {
     color: black;
     position: relative;
     font-weight: bold;
@@ -58,3 +80,95 @@ nav{
 .pageRef:hover::before {
     width: 100%;
 }
+
+/* Estilos para el botón del menú hamburguesa */
+.menu-icon {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.menu-button {
+    margin: 0;
+    padding: 0;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para animar las barras al abrir el menú (SI ALGUIEN TIENE GANAS DE HACER MAS LINDA LA ANIMACIÓN, JOYA)*/ 
+.menu-icon.active .bar:nth-child(1) {
+    background-color: white;
+    transform: rotate(90deg) translateY(-5px) translateX(-3px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    background-color: white;
+    transform: rotate(90deg);
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    background-color: white;
+    transform: rotate(90deg) translateY(5px) translateX(3px);
+}
+
+
+
+
+/* Estilos por defecto (pantallas grandes) */
+.pagesRefContainer {
+    display: flex;
+}
+
+.menu-button {
+    display: none;
+}
+
+/* Estilos para dispositivos móviles (usando una media query) */
+@media (max-width: 803px) {
+    .pagesRefContainer {
+        display: none;
+        width: 100%;
+        height: calc(70vh - 50px);
+        position: fixed;
+        top: 40px;
+        right: 0;
+        background-color: rgba(105, 0, 0, 0.856);
+        flex-direction: column; /* Muestra los links en una columna */
+        align-items: center;
+        padding: 10px;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+
+        margin-right: 0;
+    }
+    .menu-button {
+        display: block;
+    }
+
+    .pagesRefContainer.active {
+        display: flex;
+    }
+
+    .pageRef {
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .pageRef:hover {
+        background-color: white;
+        color: red;
+    }
+}
+
+
