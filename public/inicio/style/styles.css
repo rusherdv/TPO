@@ -7,6 +7,9 @@ body {
     font-family: 'Inter', sans-serif;
     flex-direction: column;
     flex-wrap: nowrap;
+    background-image: url(../img/img-bg.jpg);
+    background-size: 100% 100%;
+    color: white;
 }
 
 a{
@@ -237,4 +240,16 @@ a{
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+}
+
+@media (max-width: 850px) {
+    .stadiumText{
+        position: absolute;
+        color: white;
+        font-size: medium;
+        font-weight: 900;
+        width: 90%;
+        bottom: 10%;
+        margin-right: 5%;
+    }
 }
