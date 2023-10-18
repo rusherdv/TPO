@@ -24,24 +24,24 @@
   <!-- Zona de barra de navegacion -->
   <header>
     <nav>
-      <a href="../index.html"><img src="../inicio/img/logonew.webp" class="logo_mini" alt="Mini escudo"></a>
-        <button class="menu-button">
-            <div class="menu-icon">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-            </div>
-        </button>
-        <div class="pagesRefContainer">
-            <a href="../index.html" class="pageRef">Inicio</a>
-            <a href="https://www.arseshop.com.ar/" target="_blank" class="pageRef">Tienda</a>
-            <a href="../stats/stats.html" class="pageRef">Estadisticas</a>
-            <a href="../socio/socio.html" class="pageRef">Socio</a>
-            <a href="../contacto/contacto.html" class="pageRef">Contacto</a>
+      <img src="../inicio/img/logonew.webp" class="logo_mini" alt="Mini escudo">
+      <button class="menu-button">
+        <div class="menu-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <img src="../inicio/img/copas.webp" class="copas_mini" alt="Mini escudo">
+      </button>
+      <div class="pagesRefContainer">
+        <a href="../index.html" class="pageRef">Inicio</a>
+        <a href="https://www.arseshop.com.ar/" target="_blank" class="pageRef">Tienda</a>
+        <a href="../stats/stats.html" class="pageRef">Estadisticas</a>
+        <a href="../socio/socio.html" class="pageRef">Socio</a>
+        <a href="../contacto/contacto.html" class="pageRef">Contacto</a>
+      </div>
+      <img src="../inicio/img/copas.webp" class="copas_mini" alt="Mini escudo">
     </nav>
-</header>
+  </header>
 
   <!-- Zona de Banner con lema y escudo -->
   <section class="bannerSection">
@@ -62,7 +62,8 @@
       </div>
       <div class="form-group">
         <label for="tipoDoc">Tipo de Documento</label>
-        <select name="tipoDoc" id="tipoDoc" required="" data-parsley-required-message="Debe elegir un tipo de documento">
+        <select name="tipoDoc" id="tipoDoc" required=""
+          data-parsley-required-message="Debe elegir un tipo de documento">
           <option selected="" value="">-</option>
           <option value="dni">DNI</option>
           <option value="dnie">DNI Extranjero</option>
@@ -76,7 +77,8 @@
       </div>
       <div class="form-group">
         <label for="nacionalidad">Nacionalidad</label>
-        <select name="nacionalidad" id="nacionalidad" required="" data-parsley-required-message="Debe elegir una nacionalidad">
+        <select name="nacionalidad" id="nacionalidad" required=""
+          data-parsley-required-message="Debe elegir una nacionalidad">
           <option value="">Elegí la opción correspondiente</option>
           <option value="Afganistán" id="AF">Afganistán</option>
           <option value="Albania" id="AL">Albania</option>
@@ -321,19 +323,25 @@
       </div>
       <div class="form-group">
         <label for="dniFrente">Foto del frente del DNI</label>
-        <input type="file" id="dniFrente" name="dniFrente" required="" data-parsley-required-message="Adjunte una foto del frente del dni" accept="image/*" data-parsley-max-file-size="1024" maxlength="150">
+        <input type="file" id="dniFrente" name="dniFrente" required=""
+          data-parsley-required-message="Adjunte una foto del frente del dni" accept="image/*"
+          data-parsley-max-file-size="1024" maxlength="150">
       </div>
       <div class="form-group">
         <label for="dniDorso">Foto del dorso del DNI</label>
-        <input type="file" id="dniDorso" name="dniDorso" required="" data-parsley-required-message="Adjunte una foto del dorso del dni" accept="image/*" data-parsley-max-file-size="1024" maxlength="150">
+        <input type="file" id="dniDorso" name="dniDorso" required=""
+          data-parsley-required-message="Adjunte una foto del dorso del dni" accept="image/*"
+          data-parsley-max-file-size="1024" maxlength="150">
       </div>
       <div class="form-group">
         <label for="carnet">Foto Carnet</label>
-        <input type="file" id="carnet" name="carnet" required="" data-parsley-required-message="Adjunte una foto carnet" accept="image/*" data-parsley-max-file-size="1024" maxlength="150">
+        <input type="file" id="carnet" name="carnet" required="" data-parsley-required-message="Adjunte una foto carnet"
+          accept="image/*" data-parsley-max-file-size="1024" maxlength="150">
       </div>
       <div class="form-group">
         <label for="nacimiento">Fecha de Nacimiento</label>
-        <input type="date" id="nacimiento" name="nacimiento" required="" data-parsley-required-message="Debe completar la fecha de nacimiento">
+        <input type="date" id="nacimiento" name="nacimiento" required=""
+          data-parsley-required-message="Debe completar la fecha de nacimiento">
       </div>
       <div class="form-group">
         <label for="sexo">Sexo</label>
@@ -342,19 +350,22 @@
           <option value="H">Hombre</option>
           <option value="M">Mujer</option>
           <option value="NB">No Binario</option>
-      </select>
+        </select>
       </div>
       <div class="form-group">
         <label for="telefono">Teléfono</label>
-        <input type="text" id="telefono" name="telefono" placeholder="+54 9 11 2465-6563" required="" data-parsley-required-message="Debe completar el teléfono" maxlength="150">
+        <input type="text" id="telefono" name="telefono" placeholder="+54 9 11 2465-6563" required=""
+          data-parsley-required-message="Debe completar el teléfono" maxlength="150">
       </div>
       <div class="form-group">
         <label for="email">Correo</label>
-        <input type="email" id="email" name="email" placeholder="nombre@direccion.com" required="" data-parsley-required-message="Debe completar el email" maxlength="150"> 
+        <input type="email" id="email" name="email" placeholder="nombre@direccion.com" required=""
+          data-parsley-required-message="Debe completar el email" maxlength="150">
       </div>
       <div class="form-group">
         <label for="categoria">Categoria de Socio</label>
-        <select name="categoria" id="categoria" required="" data-parsley-required-message="Debe elegir una categoria de socio">
+        <select name="categoria" id="categoria" required=""
+          data-parsley-required-message="Debe elegir una categoria de socio">
           <option selected="" value="">-</option>
           <option value="1">Socio Activo - Mayor</option>
           <option value="2">Socia Activa Dama - Mayor</option>
