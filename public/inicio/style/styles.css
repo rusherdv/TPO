@@ -18,36 +18,70 @@ a{
 
 /* Presentacion section */
 
-.bannerSection{
+/* Estilos CSS */
+.bannerSection {
     position: relative;
     width: 100%;
+    display: flex;
 }
 
-.banner{
+.banner {
     filter: brightness(0.4);
-    height: auto;
     width: 100%;
+    height: auto;
 }
 
-.logo{
-    width: 13vw;
-}
-
-.bannerText{
+.bannerText {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
+    
 }
 
-.lemaText{
+.textContainer {
+    margin-bottom: 2vh; /* Ajusta según sea necesario */
+    margin-right: 22vw; /* Ajusta según sea necesario */
+   
+}
+
+.lemaText {
     color: white;
     font-weight: 900;
     font-size: 4vw;
+    font-family: 'Brush Script MT';
+    margin: 0;
 }
+
+.imageContainer {
+    margin-top: 2vh; /* Ajusta según sea necesario */
+    margin-left: 2vw; /* Ajusta según sea necesario */
+}
+
+.logo {
+    width: 13vw;
+    max-width: 100%;
+}
+
+/* Media query para ajustes específicos de dispositivos móviles */
+@media (max-width: 768px) {
+    .textContainer,
+    .imageContainer {
+        margin: 0;
+    }
+
+    .lemaText {
+        font-size: 5vw; /* Ajusta según sea necesario */
+    }
+
+    .logo {
+        width: 15vw;
+    }
+}
+
+
 
 /* Plantilla section */
 
