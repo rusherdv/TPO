@@ -129,12 +129,25 @@ a{
     margin: auto;
 }
 
-.stadiumTitle{
+.stadiumTitle {
     text-align: center;
     font-size: 35px;
-    font-family: 'Inter';
+    font-family:'Gill Sans';
     font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 20px; /* Ajusta este valor según sea necesario */
+    transform: translateX(-50%);
+    width: 100%;
 }
+
+.upperTitle {
+    display: block;
+    font-size: 35px; /* Ajusta el tamaño según sea necesario */
+    font-weight: 400;
+    
+}
+
 
 .stadium{
     width: 100%;
@@ -170,6 +183,7 @@ a{
     width: 90%;
     bottom: 10%;
     margin-right: 5%;
+    font-family:'Gill Sans'
 }
 
 .trophyDiv{
