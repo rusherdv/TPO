@@ -25,7 +25,8 @@ nav {
     height: 50px;
     position: fixed;
     z-index: 1;
-    background-color: rgb(180, 33, 63);
+    background-color: rgb(254, 94, 94);
+    opacity: 0.9;
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
@@ -38,6 +39,7 @@ nav {
     width: 6%;
     margin-left: 5%;
     margin-top: 5px;
+    
 
     z-index: 2; /*para que quede arriba del menú de columnas*/
 }
@@ -64,11 +66,15 @@ nav {
     margin-right: 5%;
 }
 
+/* Estilos CSS */
+
 .pageRef {
-    color: black;
+    color: rgb(233, 235, 236);
     position: relative;
-    font-weight: bold;
+    font-weight:500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
     text-decoration: none;
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
 }
 
 .pageRef::before {
@@ -76,15 +82,19 @@ nav {
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: black;
     bottom: -3px;
     left: 0;
     transition: width 0.3s ease;
 }
 
+.pageRef:hover {
+    color: rgb(34, 103, 117); /* Cambia el color al pasar el mouse por encima */
+}
+
 .pageRef:hover::before {
     width: 100%;
 }
+
 
 /* Estilos para el botón del menú hamburguesa */
 .menu-icon {
