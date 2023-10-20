@@ -19,7 +19,7 @@ async function getPlayersData() {
           div.classList.add('playerCard')
           div.innerHTML = `
             <div class="playerLeft">
-            <img class="playerImage" src=${player.photo} alt="Imagen de jugador">
+            <img class="playerImage" src=${player.photo} onerror="this.onerror=null;this.src='inicio/img/error_img_plyr.png';" alt="Imagen de jugador">
             </div>
             <div class="playerRight">
                 <p class="playerName">${player.name}</p>

@@ -4,6 +4,7 @@
 /* sección del formulario */
 .formSection {
     margin-top: 20px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,6 +22,7 @@
 
 .formSection h1 {
     font-size: 50px;
+    margin-bottom: 10px;
 }
 
 .form-group {
@@ -87,6 +89,7 @@ button[type="button"]:hover {
 .social-text{
     font-size: 16px;
     margin-left: 5px;
+    color: white;
 }
 
 .logo-contact{

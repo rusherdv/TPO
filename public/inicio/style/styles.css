@@ -7,12 +7,25 @@ body {
     font-family: 'Inter', sans-serif;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-image: url(../img/img-bg.jpg);
-    background-size: 100% 100%;
     color: white;
 }
 
-a{
+body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    background-image: url(../img/img-bg.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 140%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+
+a {
     text-decoration: none;
 }
 
@@ -23,6 +36,7 @@ a{
     position: relative;
     width: 100%;
     display: flex;
+    margin:auto;
 }
 
 .banner {
@@ -36,15 +50,17 @@ a{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .textContainer {
-    margin-bottom: 2vh; /* Ajusta según sea necesario */
-    margin-right: 22vw; /* Ajusta según sea necesario */
-   
+    margin-bottom: 2vh;
+    /* Ajusta según sea necesario */
+    margin-right: 22vw;
+    /* Ajusta según sea necesario */
+
 }
 
 .lemaText {
@@ -57,8 +73,10 @@ a{
 }
 
 .imageContainer {
-    margin-top: 2vh; /* Ajusta según sea necesario */
-    margin-left: 2vw; /* Ajusta según sea necesario */
+    margin-top: 2vh;
+    /* Ajusta según sea necesario */
+    margin-left: 2vw;
+    /* Ajusta según sea necesario */
 }
 
 .logo {
@@ -68,13 +86,15 @@ a{
 
 /* Media query para ajustes específicos de dispositivos móviles */
 @media (max-width: 768px) {
+
     .textContainer,
     .imageContainer {
         margin: 0;
     }
 
     .lemaText {
-        font-size: 5vw; /* Ajusta según sea necesario */
+        font-size: 5vw;
+        /* Ajusta según sea necesario */
     }
 
     .logo {
@@ -86,25 +106,25 @@ a{
 
 /* Plantilla section */
 
-.squadSection{
+.squadSection {
     width: 90%;
     margin: auto;
 }
 
-.squadTitle{
+.squadTitle {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
 }
 
-.playerCardDiv{
+.playerCardDiv {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
-.playerCard{
+.playerCard {
     border: 1px solid rgb(172, 172, 172);
     border-radius: 5px;
     width: 300px;
@@ -112,13 +132,13 @@ a{
     margin-bottom: 20px;
 }
 
-.playerLeft{
+.playerLeft {
     position: relative;
     display: flex;
-    justify-content: flex-start;   
+    justify-content: flex-start;
 }
 
-.playerNumberBack{
+.playerNumberBack {
     font-size: 60px;
     opacity: 0.2;
     top: 10px;
@@ -128,68 +148,69 @@ a{
     position: absolute;
 }
 
-.playerImage{
+.playerImage {
     width: 100px;
 }
 
-.playerRight{
+.playerRight {
     width: 100%;
     margin: auto;
     margin-left: 10px;
 }
 
-.playerName{
+.playerName {
     font-weight: 600;
     margin-top: 5px;
     margin-bottom: 2px;
 }
 
-.playerNum{
+.playerNum {
     margin: 0px;
     margin-bottom: 2px;
 }
 
-.playerAge{
+.playerAge {
     margin: 0px;
     margin-bottom: 2px;
 }
 
-.playerPosition{
+.playerPosition {
     margin: 0px;
 }
 
 /* Estadio section */
-.stadiumSection{
+.stadiumSection {
     width: 100%;
-    margin: auto;
 }
 
 .stadiumTitle {
     text-align: center;
     font-size: 35px;
-    font-family:'Gill Sans';
+    font-family: 'Gill Sans';
     font-weight: 600;
     position: absolute;
     left: 50%;
-    top: 20px; /* Ajusta este valor según sea necesario */
+    top: 20px;
+    /* Ajusta este valor según sea necesario */
     transform: translateX(-50%);
     width: 100%;
 }
 
 .upperTitle {
     display: block;
-    font-size: 35px; /* Ajusta el tamaño según sea necesario */
+    font-size: 35px;
+    /* Ajusta el tamaño según sea necesario */
     font-weight: 400;
-    
+
 }
 
 
-.stadium{
+.stadium {
     width: 100%;
     margin-top: 5px;
 }
 
-.stadiumImg{
+.stadiumImg {
     position: relative;
     display: flex;
     justify-content: flex-end;
@@ -197,20 +218,20 @@ a{
     height: auto;
 }
 
-.stadiumImage{
+.stadiumImage {
     width: 100%;
     height: 600px;
     object-fit: cover;
     filter: saturate(150%) brightness(0.7);
 }
 
-.stadiumIframe{
+.stadiumIframe {
     width: 100%;
     height: 300px;
 }
 
 
-.stadiumText{
+.stadiumText {
     position: absolute;
     color: white;
     font-size: 30px;
@@ -218,16 +239,16 @@ a{
     width: 90%;
     bottom: 10%;
     margin-right: 5%;
-    font-family:'Gill Sans'
+    font-family: 'Gill Sans'
 }
 
-.trophyDiv{
+.trophyDiv {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.trophy{
+.trophy {
     border: 1px solid rgb(172, 172, 172);
     border-radius: 5px;
     height: auto;
@@ -235,13 +256,13 @@ a{
     margin-bottom: 20px;
 }
 
-.trophyImage{
+.trophyImage {
     width: 300px;
     max-width: 100%;
     height: auto;
 }
 
-.trophyBottom{
+.trophyBottom {
     width: 90%;
     margin: auto;
     display: flex;
@@ -249,26 +270,26 @@ a{
     justify-content: space-between;
 }
 
-.trophyName{
+.trophyName {
     font-weight: 400;
     font-size: 20px;
     font-family: 'Inter';
     text-align: center;
 }
 
-.trophyAge{
+.trophyAge {
     font-weight: 400;
     font-size: 20px;
     font-family: 'Inter';
     text-align: center;
 }
 
-.trophyTop{
+.trophyTop {
     display: flex;
-    justify-content: flex-start;   
+    justify-content: flex-start;
 }
 
-.trophyTittle{
+.trophyTittle {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
@@ -276,13 +297,13 @@ a{
 
 /* Noticias */
 
-.noticiasTittle{
+.noticiasTittle {
     text-align: center;
     font-size: 35px;
     font-weight: 600;
 }
 
-.postsDiv{
+.postsDiv {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -291,8 +312,12 @@ a{
     margin-bottom: 50px;
 }
 
+.instagramPost, .twitterPost {
+    margin: 2%;
+}
+
 @media (max-width: 850px) {
-    .stadiumText{
+    .stadiumText {
         position: absolute;
         color: white;
         font-size: medium;
@@ -301,4 +326,8 @@ a{
         bottom: 10%;
         margin-right: 5%;
     }
+}
+
+section{
+    margin-top: 2%;
 }
