@@ -1,11 +1,7 @@
 const tbody = document.querySelector('tbody');
-const btnData = document.getElementById('btnTData');
 
 window.onload = () => {
-  btnData.addEventListener("click", () => {
-    getTableData();
-    btnData.setAttribute("disabled",true);
-  });
+  getTableData();
 };
 
 async function getTableData() {
